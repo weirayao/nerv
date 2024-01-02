@@ -1,13 +1,15 @@
 import io
 import os
-from typing import List, Set
+from typing import List
 
 import setuptools
 
 ROOT_DIR = os.path.dirname(__file__)
 
+
 def get_path(*filepath) -> str:
     return os.path.join(ROOT_DIR, *filepath)
+
 
 def read_readme() -> str:
     """Read the README file if present."""
@@ -30,8 +32,7 @@ setuptools.setup(
     version="0.0.1",
     author="Weiran Yao",
     license="Apache 2.0",
-    description=("XGen OS: An interface model for "
-                 "multimodal agents"),
+    description=("XGen OS: An interface model for " "multimodal agents"),
     long_description=read_readme(),
     long_description_content_type="text/markdown",
     url="https://github.com/weiayao/nerv",
@@ -47,5 +48,5 @@ setuptools.setup(
     packages=setuptools.find_packages(exclude=("docs", "tests")),
     python_requires=">=3.10",
     install_requires=get_requirements(),
-    package_data={"nerv": ["py.typed"]},
+    package_data={"xos": ["py.typed"]},
 )
