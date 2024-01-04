@@ -1,1 +1,1 @@
-# XGen OS: Interface Model for Language Agent Inference, Planning, and Control
+# XGen OS: Interface Model for Flexible Agent Inference, Planning, and Control
